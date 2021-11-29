@@ -1,0 +1,32 @@
+@import '../../../App';
+
+.Filters {
+  display: flex;
+
+  &-item {
+    width: 33.33%;
+    min-height: 50px;
+    box-shadow: 0 0 0 1px #DFE5EC;
+    line-height: 50px;
+    color: $text-color;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: center;
+    background-color: #ffffff;
+    cursor: pointer;
+
+    &:first-child {
+      border-radius: 5px 0 0 5px;
+    }
+
+    &:last-child {
+      border-radius: 0 5px 5px 0;
+    }
+
+    &_active {
+      color: #ffffff;
+      background-color: $blue;
+    }
+  }
+}
